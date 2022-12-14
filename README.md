@@ -1,0 +1,2 @@
+# spellgenerator
+ NovelAI prompt generator
