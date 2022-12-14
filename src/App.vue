@@ -1,6 +1,6 @@
 <template>
   <form>
-    <h1>Lightning Spell - NovelAI spell generator</h1>
+    <h1>Spell Generator - NovelAI prompt generator</h1>
     <div class="data">
       <ul class="cat-list">
         <li v-for="(category, categoryIndex) in categories" :key="categoryIndex" class="cat-container">
@@ -187,7 +187,7 @@ export default {
       var dataUrl = URL.createObjectURL(blob)
       var downloadLink = document.createElement('a');
       downloadLink.href = dataUrl;
-      downloadLink.download = `lightningspell.json`
+      downloadLink.download = `spell.json`
       document.body.appendChild(downloadLink)
       downloadLink.click()
       downloadLink.parentNode.removeChild(downloadLink)
